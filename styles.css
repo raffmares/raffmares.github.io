@@ -29,7 +29,7 @@ body {
 }
 /* hide the links inside the navigation menu (except for home) */
 #topnav #pages {
-  margin: 1px 0;
+  margin: 0;
   max-height: 0; /* for scroll down & up effect */
   overflow: hidden;
   /* background-color: rgba(70, 150, 0, 0.96); */
@@ -70,8 +70,8 @@ body {
 #content {
   margin: auto;
   max-width: 1000px;
-  padding: 1% 4% 6% 4%;
-  line-height: 1.6;
+  padding: 1% 2% 6% 2%;
+  line-height: 1.4;
 }
 #content a {
   text-decoration: none;
@@ -95,8 +95,8 @@ body {
   display: none;
 }
 #about .text {
-  margin: 0 40px;
-  padding: 0;
+  margin: 0 20px;
+  padding: 0 20px;
   font-size: 128%;
   color: rgb(220, 220, 220);
   border-bottom: solid 2px rgb(220, 220, 220);
@@ -224,9 +224,17 @@ body {
     line-height: 50px;
     font-size: 130%;
   }
+  #topnav #pages {
+    margin: 1px 0;
+  }
   /* hamburger menu 'button' */
   #topnav #menu .bar {
     width: 30px;
+  }
+
+  #content {
+    padding: 1% 4% 6% 4%;
+    line-height: 1.6;
   }
 
   #about {
@@ -245,7 +253,6 @@ body {
   }
   #about .text {
     margin: 60px 18px 0 320px;
-    padding: 0 20px;
     font-size: 146%;
     border-top: solid 2px rgb(220, 220, 220);
   }
