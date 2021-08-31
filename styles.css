@@ -126,22 +126,14 @@ body {
   font-size: 120%;
   color: rgb(220, 220, 220);
 }
-/* #bio #long {
-  color: rgb(220, 220, 220);
-} */
-/* #bio #short {
-  color: rgb(220, 220, 220);
-} */
-.hidden,
-/* .short, */
+/* .hidden,
 .longBG:target {
   display: none;
 }
-/* .long:target + .short, */
 .longBG:target ~ .hidden {
   display: block;
   padding-top: 20px;
-}
+} */
 .image-wide-container {
   display: flex;
   padding: 10px 0;
@@ -183,6 +175,18 @@ body {
   width: 100%;
   height: auto;
   border-radius: 4px;
+}
+#work .logos {
+  padding-top: 20px;
+  text-align: center;
+}
+#work .logos a {
+  text-decoration: none;
+}
+#work .logo {
+  height: 40px;
+  width: auto;
+  margin: 20px 30px;
 }
 
 #contact .logos {
@@ -280,6 +284,10 @@ body {
 
   .imageText {
     font-size: 118%;
+  }
+
+  #work .logo {
+    height: 60px;
   }
 
   #contact .logo {
