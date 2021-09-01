@@ -23,7 +23,6 @@ body {
   width: 100%;
   line-height: 46px;
   text-align: left;
-  /* background-color: rgba(70, 150, 0, 0.96); */
   background-color: rgba(255, 128, 0, 0.96);
   font-size: 120%;
 }
@@ -32,7 +31,6 @@ body {
   margin: 0;
   max-height: 0; /* for scroll down & up effect */
   overflow: hidden;
-  /* background-color: rgba(70, 150, 0, 0.96); */
   background-color: rgba(255, 128, 0, 0.96);
   text-align: center;
   transition-property: all;
@@ -70,12 +68,11 @@ body {
 #content {
   margin: auto;
   max-width: 1000px;
-  padding: 1% 1% 6% 1%;
+  padding: 1% 0 6% 0;
   line-height: 1.4;
 }
 #content a {
   text-decoration: none;
-  /* color: rgb(70, 150, 0); */
   color: rgb(200, 128, 0);
 }
 
@@ -126,6 +123,11 @@ body {
   font-size: 120%;
   color: rgb(220, 220, 220);
 }
+
+#background ul {
+  margin-right: 10px;
+  margin-bottom: 30px;
+}
 /* .hidden,
 .longBG:target {
   display: none;
@@ -134,47 +136,46 @@ body {
   display: block;
   padding-top: 20px;
 } */
-.image-wide-container {
+#background .photo-container {
   display: flex;
-  padding: 10px 0;
+  padding: 10px;
   justify-content: center;
 }
-.image-wide {
+#background .photo {
   width: 96%;
   height: auto;
   border-radius: 4px;
 }
 
-#work .examples {
+#work .example-container {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   justify-content: center;
 }
-.imageBox {
+.example {
   position: relative;
   width: 440px;
   height: auto;
   margin: 30px 20px 70px 20px;
 }
-.imageText {
-  position: absolute;
-  bottom: -50px;
+.exampleImage {
   width: 100%;
-  min-height: 30px;
+  height: auto;
+  border-radius: 4px;
+}
+.exampleText {
+  position: absolute;
+  bottom: -56px;
+  width: 100%;
   height: auto;
   line-height: 1.2;
   text-align: center;
   font-size: 110%;
 }
-.imageText p {
+.exampleText p {
   margin: 0;
   padding: 8px 20px;
-}
-#work .image-big {
-  width: 100%;
-  height: auto;
-  border-radius: 4px;
 }
 #work .logos {
   padding-top: 20px;
@@ -184,13 +185,13 @@ body {
   text-decoration: none;
 }
 #work .logo {
-  height: 40px;
+  height: 46px;
   width: auto;
-  margin: 20px 30px;
+  padding: 20px 30px;
 }
 
 #contact .logos {
-  padding-top: 20px;
+  padding: 20px 0;
   text-align: center;
 }
 #contact .logos a {
@@ -199,7 +200,7 @@ body {
 #contact .logo {
   height: 30px;
   width: auto;
-  margin: 10px;
+  padding: 10px;
 }
 
 #footer {
@@ -278,11 +279,11 @@ body {
     padding: 10px 4px 0 4px;
     font-size: 136%;
   }
-  .image-wide {
+  #background .photo {
     width: 70%;
   }
 
-  .imageText {
+  .exampleText {
     font-size: 118%;
   }
 
