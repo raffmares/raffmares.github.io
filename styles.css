@@ -230,9 +230,9 @@ body {
     line-height: 50px;
     font-size: 130%;
   }
-  #topnav #pages {
+  /* #topnav #pages {
     margin: 1px 0;
-  }
+  } */
   /* hamburger menu 'button' */
   #topnav #menu .bar {
     width: 30px;
